@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Input, TextField, IconButton, Box, CircularProgress, Typography } from '@mui/material';
+import { Button, TextField, IconButton, Box, CircularProgress, Typography } from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
@@ -101,7 +101,7 @@ const FileUpload: React.FC = () => {
         startIcon={<CloudUploadIcon />}
       >
         {selectedFile ? selectedFile.name : 'Choose File'}
-        <Input
+        <input
           type="file"
           onChange={onFileChange}
           accept=".txt"
