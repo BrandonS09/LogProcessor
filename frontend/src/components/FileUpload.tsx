@@ -38,7 +38,7 @@ const FileUpload: React.FC = () => {
     console.log('Job ID Pattern:', jobIdPattern);
     console.log('Additional Patterns:', additionalPatterns);
 
-    fetch('http://localhost:8000/api/upload/', {
+    fetch('https://backend-log-processor.vercel.app/api/upload/', {
       method: 'POST',
       body: formData,
       headers: {
