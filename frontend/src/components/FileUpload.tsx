@@ -13,7 +13,7 @@ const FileUpload: React.FC = () => {
   const [additionalPatterns, setAdditionalPatterns] = useState<string[]>(['']);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/csrf-token/')
+    fetch('http://backend-log-processor.vercel.app/api/csrf-token/')
       .then(response => response.json())
       .then(data => setCsrfToken(data.csrfToken))
       .catch(error => console.error('Error fetching CSRF token:', error));
